@@ -10,7 +10,7 @@ app.use(bodyParser.urlencoded({
 app.use(bodyParser.json());
 
 // Middleware 2: Delay Middleware to simulate slow server
-// app.use((req, res, next) => setTimeout(next, 2000))
+app.use((req, res, next) => setTimeout(next, 4000))
 
 // this will be our Database.
 let todos  = []
